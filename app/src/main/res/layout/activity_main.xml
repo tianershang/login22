@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="ID"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/user_id"
+        android:layout_alignEnd="@+id/pw_view" />
+
+    <TextView
+        android:id="@+id/pw_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alinParentStart="true"
+        android:text="PW"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
+        android:id="@+id/user_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_pw"
+        android:layout_alignParentStart="true"
+        android:text="SIGN IN"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_signin"
+        android:layout_centerHorizontal="true"
+        android:onClick="CliSignUp"
+        android:text="SIGN UP"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user_pw"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="email@input,com"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/user_pw"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+</android.support.constraint.ConstraintLayout>
